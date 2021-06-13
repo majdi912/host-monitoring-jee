@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <f:metadata>  
+   <f:viewParam name="idHost" value="#{hostDetailsMBean.idHost}"  
+                required="true"/>  
+   <f:viewAction action="#{hostDetailsMBean.loadHost}"/>  
+</f:metadata>
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body><f:view>
+
+
+            <h:form>
+                <h1><h:outputText value="Create/Edit"/></h1>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="Id:" for="id" />
+                    <h:inputText id="id" value="#{hostDetailsMBean.details.id}" title="Id" required="true" requiredMessage="The Id field is required."/>
+                    <h:outputLabel value="Ip:" for="ip" />
+                    <h:inputText id="ip" value="#{hostDetailsMBean.details.ip}" title="Ip" required="true" requiredMessage="The Ip field is required."/>
+                    <h:outputLabel value="Mac:" for="mac" />
+                    <h:inputText id="mac" value="#{hostDetailsMBean.details.mac}" title="Mac" required="true" requiredMessage="The Mac field is required."/>
+                    <h:outputLabel value="Nom:" for="nom" />
+                    <h:inputText id="nom" value="#{hostDetailsMBean.details.nom}" title="Nom" required="true" requiredMessage="The Nom field is required."/>
+                    <h:outputLabel value="Location:" for="location" />
+                    <h:inputText id="location" value="#{hostDetailsMBean.details.location}" title="Location" required="true" requiredMessage="The Location field is required."/>
+                    <h:outputLabel value="Status:" for="status" />
+                    <h:inputText id="status" value="#{hostDetailsMBean.details.status}" title="Status" required="true" requiredMessage="The Status field is required."/>
+                </h:panelGrid>
+                  <h:button id="back" value="Revenir à la liste" outcome="HostList"/>  
+  <h:commandButton id="update" value="Enregistrer" action="#{hostDetailsMBean.update}"/>
+            </h:form>
+        </f:view>
+
+    </h:body>
+</html>
+

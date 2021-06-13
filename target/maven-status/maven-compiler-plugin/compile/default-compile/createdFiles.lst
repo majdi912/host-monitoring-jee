@@ -1,0 +1,10 @@
+com/mycompany/hosts/monitoring/resources/JavaEE8Resource.class
+pkgws/hostejb.class
+com/mycompany/hosts/monitoring/entities/JAXRSConfiguration.class
+com/mycompany/hosts/monitoring/entities/Technicien.class
+com/mycompany/hosts/monitoring/entities/User.class
+managedbeans/HostDetailsMBean.class
+managedbeans/HostMBean.class
+com/mycompany/hosts/monitoring/config/ConfigJSF.class
+com/mycompany/hosts/monitoring/entities/Panne.class
+com/mycompany/hosts/monitoring/entities/Host.class
